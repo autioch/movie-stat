@@ -8,5 +8,17 @@ module.exports = {
     './tools/eslint/strict-mode',
     './tools/eslint/stylistic-issues',
     './tools/eslint/variables'
-  ].map(require.resolve)
+  ].map(require.resolve),
+  rules : {
+    // enforce consistent line breaks inside braces
+    'object-curly-newline': ['error', {
+      ObjectExpression: {
+        minProperties: 1
+        // multiline: true
+      },
+      ObjectPattern: {
+        multiline: true
+      }
+    }]
+  }
 };

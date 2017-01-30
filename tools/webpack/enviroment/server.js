@@ -31,7 +31,7 @@ module.exports = function server(webpackConfig, setup) {
   http
     .createServer(function handleRequest(request, response) {
       const uri = url.parse(request.url).pathname;
-      let filename = path.join(setup.projectPath, 'build', uri);
+      let filename = path.join(setup.buildFolder, uri);
 
       fs.exists(filename, function existCallback(exists) {
         if (!exists) {
