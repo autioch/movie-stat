@@ -1,4 +1,4 @@
-const minBarWidth = 30;
+const minBarWidth = 40;
 const space = 100;
 
 module.exports = function trimDict(stat) {
@@ -24,6 +24,7 @@ module.exports = function trimDict(stat) {
   .slice(0, maxVariety)
   .sort();
 
+  stat['total variety'] = stat.variety;
   stat.variety = viableKeys.length;
 
   stat.dict = viableKeys.reduce((newDict, key) => {

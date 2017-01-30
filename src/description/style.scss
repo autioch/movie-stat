@@ -1,0 +1,41 @@
+h3 {
+  text-transform: capitalize;
+  margin-top: 3em;
+
+  script + & {
+    margin-top: .5em;
+  }
+}
+
+.description__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.decription__detail {
+  box-sizing: border-box;
+  width: 25%;
+  white-space: nowrap;
+}
+
+.decription__label {
+  display: inline-block;
+  width: 10em;
+  text-align: right;
+  margin-right: 1em;
+  text-transform: capitalize;
+
+  &::after {
+    content: ':';
+  }
+}
+
+.decription__value {
+  display: inline-block;
+}
+
+.canvasjs-chart-credit {
+  display: none;
+}

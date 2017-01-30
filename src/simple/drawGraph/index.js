@@ -3,7 +3,6 @@ const drawAxisY = require('./drawAxisY');
 const drawAxes = require('./drawAxes');
 const drawBars = require('./drawBars');
 const drawLabels = require('./drawLabels');
-const trimDict = require('./trimDict');
 
 const HALF = 0.5;
 const scrollSize = 50;
@@ -13,7 +12,6 @@ function getMax(dict) {
 }
 
 module.exports = function drawGraph(canvas, stat) {
-  trimDict(stat);
   let prop;
   let measureResult;
   const ctx = canvas.getContext('2d');
