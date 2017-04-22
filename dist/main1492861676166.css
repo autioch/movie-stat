@@ -1,0 +1,47 @@
+.stat-header {
+  text-transform: capitalize; }
+.stat-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.stat-summary-item {
+  box-sizing: border-box;
+  width: 25%;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.stat-summary-item__label {
+  text-align: right;
+  padding-right: 1em;
+  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+  .stat-summary-item__label::after {
+    content: ':'; }
+
+.stat-summary-item__value {
+  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+.stat-canvas {
+  background: #fff; }
+html {
+  font: normal 14px Consolas, Courier;
+  color: #444; }
+
+.stat {
+  margin-bottom: 3em; }

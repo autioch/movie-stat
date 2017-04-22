@@ -9,7 +9,8 @@
     "build": "webpack --config tools/webpack.config.js --hide-modules",
     "build:watch": "webpack --config tools/webpack.config.js --watch --hide-modules",
     "build:production": "webpack --config tools/webpack.config.js -p --hide-modules",
-    "lint": "eslint ./src --quiet --ext .js & exit 0",
+    "lint": "eslint ./src --fix --ext .js & exit 0",
+    "lint:tools": "eslint ./tools --fix --ext .js & exit 0",
     "lint:sass": "sass-lint -c .sass-lint.yml -v -q & exit 0"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "html-webpack-plugin": "^2.24.1",
     "ignore-loader": "^0.1.2",
     "json-loader": "^0.5.4",
+    "lean-tag": "^1.0.0",
     "node-sass": "^4.0.0",
     "postcss-loader": "^1.2.1",
     "sass-loader": "^4.0.2",
@@ -36,6 +38,7 @@
     "webpack-validator": "^2.2.12"
   },
   "devDependencies": {
-    "eslint": "^3.12.0"
+    "eslint": "^3.19.0",
+    "eslint-config-qb": "^1.0.0"
   }
 }

@@ -1,9 +1,11 @@
-module.exports = function drawBars(ctx, stat, width, height, yMax, offsetLeft) {
+const { height, width } = require('./config');
+
+module.exports = function drawBars(ctx, stat, yMax, offsetLeft) {
   ctx.fillStyle = '#2bf';
   ctx.strokeStyle = '#2bf';
   let count = 0;
   const { variety, dict } = stat;
-  const barWidth = width / variety;
+  const barWidth = (width - offsetLeft) / variety;
   let prop;
   let barHeight;
 

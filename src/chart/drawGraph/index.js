@@ -5,7 +5,6 @@ const drawBars = require('./drawBars');
 const drawLabels = require('./drawLabels');
 
 const HALF = 0.5;
-const scrollSize = 50;
 
 function getMax(dict) {
   return Math.max(...Object.keys(dict).map((key) => dict[key]));
@@ -31,13 +30,12 @@ module.exports = function drawGraph(canvas, stat) {
 
   offsetLeft = Math.floor(offsetLeft + 10) + HALF;
   offsetBottom = Math.floor(offsetBottom + 10) + HALF;
-  const width = window.innerWidth - offsetLeft - scrollSize;
-  const height = 200;
 
-  setupCanvas(canvas, width + offsetLeft, height + offsetBottom + 30);
+  setupCanvas(canvas, offsetBottom + 30);
+  drawAxisY(ctx, offsetLeft, offsetTop, yMax);
+  drawAxes(ctx, offsetTop, offsetLeft);
+  drawBars(ctx, stat, yMax, offsetLeft);
+  drawLabels(ctx, stat, offsetLeft);
 
-  drawAxisY(ctx, width, height, offsetLeft, offsetTop, yMax);
-  drawAxes(ctx, offsetTop, offsetLeft, height, width);
-  drawBars(ctx, stat, width, height, yMax, offsetLeft);
-  drawLabels(ctx, stat, width, height, offsetLeft);
+  return canvas;
 };

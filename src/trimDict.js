@@ -10,19 +10,19 @@ module.exports = function trimDict(stat) {
   }
 
   const viableKeys = Object
-  .keys(dict)
-  .sort((keyA, keyB) => {
-    if (dict[keyA] > dict[keyB]) {
-      return -1;
-    }
-    if (dict[keyA] < dict[keyB]) {
-      return 1;
-    }
+    .keys(dict)
+    .sort((keyA, keyB) => {
+      if (dict[keyA] > dict[keyB]) {
+        return -1;
+      }
+      if (dict[keyA] < dict[keyB]) {
+        return 1;
+      }
 
-    return 0;
-  })
-  .slice(0, maxVariety)
-  .sort();
+      return 0;
+    })
+    .slice(0, maxVariety)
+    .sort();
 
   stat['total variety'] = stat.variety;
   stat.variety = viableKeys.length;

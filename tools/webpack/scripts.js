@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = function input(webpackConfig, setup) {
   webpackConfig.module.loaders.push({
     test: /\.js$/,
+
     // exclude: /node_modules/,
     loader: 'babel-loader',
     query: {

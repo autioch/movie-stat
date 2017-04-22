@@ -1,6 +1,8 @@
-module.exports = function setupCanvas(canvas, width, height) {
+const { height, width } = require('./config');
+
+module.exports = function setupCanvas(canvas, offsetBottom) {
   canvas.width = width;
-  canvas.height = height;
+  canvas.height = height + offsetBottom;
   const ctx = canvas.getContext('2d');
 
   ctx.textAlign = 'right';

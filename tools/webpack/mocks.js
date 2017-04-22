@@ -7,5 +7,6 @@ module.exports = function mocks(webpackConfig, setup) {
     exclude: /node_modules/,
     loader: 'json'
   });
+
   // }
 };

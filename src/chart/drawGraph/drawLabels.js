@@ -1,8 +1,10 @@
-module.exports = function drawLabels(ctx, stat, width, height, offsetLeft) {
+const { height, width } = require('./config');
+
+module.exports = function drawLabels(ctx, stat, offsetLeft) {
   ctx.rotate(-90 * Math.PI / 180);
   ctx.fillStyle = '#444';
   let count = 0.5;
-  const barCenter = width / stat.variety;
+  const barCenter = (width - offsetLeft) / stat.variety;
   let lastCenter = -100;
   let nextCenter;
 
