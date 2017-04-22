@@ -18,7 +18,7 @@ const ignoredStats = [
   // 'ffmpeg.video[].duration',
   // 'ffmpeg.formatLongName',
   // 'omdb.runtime',
-  // 'omdb.year'
+  'omdb.poster'
 ];
 
 stats

@@ -1,41 +1,36 @@
-const setupCanvas = require('./setupCanvas');
-const drawAxisY = require('./drawAxisY');
 const drawAxes = require('./drawAxes');
+const drawHelperLines = require('./drawHelperLines');
 const drawBars = require('./drawBars');
-const drawLabels = require('./drawLabels');
+const { chartHeight, canvasWidth, offsetTop, half, labelMargin, fontSize } = require('./config');
 
-const HALF = 0.5;
+function getLabelsWidth(ctx, values) {
+  const labelWidths = values.map((key) => ctx.measureText(key).width);
 
-function getMax(dict) {
-  return Math.max(...Object.keys(dict).map((key) => dict[key]));
+  return Math.max(...labelWidths) + labelMargin + half;
+}
+
+function setContext(ctx) {
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  ctx.font = `${fontSize}px Consolas`;
+  ctx.lineWidth = 1;
 }
 
 module.exports = function drawGraph(canvas, stat) {
-  let prop;
-  let measureResult;
   const ctx = canvas.getContext('2d');
-  const yMax = getMax(stat.dict);
-  let offsetLeft = ctx.measureText(yMax).width;
 
-  let offsetBottom = 0;
+  /* Set context to get true measurements */
+  setContext(ctx);
 
-  for (prop in stat.dict) {
-    measureResult = ctx.measureText(prop);
-    if (measureResult.width > offsetBottom) {
-      offsetBottom = measureResult.width;
-    }
-  }
+  const left = getLabelsWidth(ctx, stat.intermediateValues);
+  const bottom = getLabelsWidth(ctx, stat.labels);
 
-  const offsetTop = 5.5;
-
-  offsetLeft = Math.floor(offsetLeft + 10) + HALF;
-  offsetBottom = Math.floor(offsetBottom + 10) + HALF;
-
-  setupCanvas(canvas, offsetBottom + 30);
-  drawAxisY(ctx, offsetLeft, offsetTop, yMax);
-  drawAxes(ctx, offsetTop, offsetLeft);
-  drawBars(ctx, stat, yMax, offsetLeft);
-  drawLabels(ctx, stat, offsetLeft);
+  canvas.width = canvasWidth;
+  canvas.height = chartHeight + bottom + offsetTop;
+  setContext(ctx);
+  drawAxes(ctx, left);
+  drawHelperLines(ctx, stat, left);
+  drawBars(ctx, stat, left);
 
   return canvas;
 };

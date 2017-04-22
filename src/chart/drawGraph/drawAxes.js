@@ -1,10 +1,10 @@
-const { height, width } = require('./config');
+const { chartHeight, canvasWidth, offsetTop, axisColor } = require('./config');
 
-module.exports = function drawAxes(ctx, offsetTop, offsetLeft) {
-  ctx.strokeStyle = '#aaa';
+module.exports = function drawAxes(ctx, offsetLeft) {
+  ctx.strokeStyle = axisColor;
   ctx.beginPath();
   ctx.moveTo(offsetLeft, offsetTop);
-  ctx.lineTo(offsetLeft, height);
-  ctx.lineTo(width, height);
+  ctx.lineTo(offsetLeft, chartHeight + offsetTop);
+  ctx.lineTo(canvasWidth, chartHeight + offsetTop);
   ctx.stroke();
 };
