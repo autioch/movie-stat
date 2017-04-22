@@ -151,7 +151,7 @@
 /* 26 */
 /***/ function(module, exports) {
 
-	eval("'use strict';\n\nvar dotRegex = /\\./g;\n\nmodule.exports = function parseHeader(stat) {\n  var parsed = stat.key\n\n  // .replace(/\\.?([A-Z]+)/g, (match, group) => ` ${group}`)\n  .replace(dotRegex, ' ').replace(/^_/, '');\n\n  return parsed + ' (' + stat.key + ')';\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/header/parse.js\n// module id = 26\n// module chunks = 0\n//# sourceURL=webpack:///./src/header/parse.js?");
+	eval("'use strict';\n\nvar underscoreRegex = /_/g;\nvar dotRegex = /\\./g;\nvar bracketRegex = /\\[\\]/g;\nvar ffmpegRegex = /ffmpeg/g;\nvar omdbRegex = /omdb/g;\n\nmodule.exports = function parseHeader(stat) {\n  var parsed = stat.key.replace(ffmpegRegex, '').replace(omdbRegex, '').replace(underscoreRegex, ' ').replace(dotRegex, ' ').replace(bracketRegex, ' ').replace(/\\.?([A-Z]+)/g, function (match, group) {\n    return ' ' + group;\n  }).replace(/^_/, '');\n\n  // return `${parsed} (${stat.key})`;\n  return parsed;\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/header/parse.js\n// module id = 26\n// module chunks = 0\n//# sourceURL=webpack:///./src/header/parse.js?");
 
 /***/ },
 /* 27 */
