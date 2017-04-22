@@ -21,8 +21,8 @@ function getLabelSeries(series, offsetLeft, serieSpace) {
 }
 
 module.exports = function drawBars(ctx, stat, offsetLeft) {
-  const { variety, series, maxValue } = stat;
-  const serieSpace = (canvasWidth - offsetLeft) / variety;
+  const { series, maxValue } = stat;
+  const serieSpace = (canvasWidth - offsetLeft) / series.length;
   const barWidth = Math.min(serieSpace, maxBarWidth);
   const serieCenterX = offsetLeft + ((serieSpace - barWidth) * half) + barSpace;
   const serieY = offsetTop + chartHeight;

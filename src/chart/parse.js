@@ -1,9 +1,10 @@
+const { minBarWidth, canvasWidth, helpersCount } = require('./drawGraph/config');
 const singles = 1;
 const tens = 10;
 const hundreds = 100;
 const thousands = 1000;
 
-const defaultHelpersCount = 5;
+const defaultLabelWidth = 50;
 
 const rounding = {
   '1': singles,
@@ -14,8 +15,27 @@ const rounding = {
   '6': thousands
 };
 
+function siftSeries(series) {
+  const maxSeries = (canvasWidth - defaultLabelWidth) / minBarWidth;
+
+  if (series.length <= maxSeries) {
+    return series;
+  }
+
+  const siftedSeries = series
+    .sort((serieA, serieB) => serieB.value - serieA.value)
+    .slice(0, maxSeries)
+    .sort((serieA, serieB) => serieA.index - serieB.index);
+
+  siftedSeries.forEach((serie, index) => {
+    serie.index = index;
+  });
+
+  return siftedSeries;
+}
+
 function getYValues(maxValue) {
-  const valueCount = maxValue > defaultHelpersCount ? defaultHelpersCount : maxValue;
+  const valueCount = maxValue > helpersCount ? helpersCount : maxValue;
   const values = [maxValue];
 
   for (let index = 1; index < valueCount; index++) {
@@ -49,10 +69,9 @@ module.exports = function parse(stat) {
   }));
 
   return {
-    variety: stat.variety,
     intermediateValues: getYValues(maxValue),
     maxValue,
-    series,
+    series: siftSeries(series),
     labels
   };
 };

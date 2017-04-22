@@ -12,20 +12,30 @@ const chartRender = require('./chart/render');
 require('./style');
 
 const ignoredStats = [
-
-  // 'ffmpeg.audio[].codecLongName',
-  // 'ffmpeg.video[].codecLongName',
-  // 'ffmpeg.video[].duration',
-  // 'ffmpeg.formatLongName',
-  // 'omdb.runtime',
-  'omdb.poster'
+  'ffmpeg.audio[].codecLongName',
+  'ffmpeg.duration',
+  'ffmpeg.formatLongName',
+  'ffmpeg.generated',
+  'ffmpeg.subtitle[].codecLongName',
+  'ffmpeg.unkown[].duration_ts',
+  'ffmpeg.unkown[].index',
+  'ffmpeg.unkown[].tags.filename',
+  'ffmpeg.video[].codecLongName',
+  'ffmpeg.video[].duration',
+  'file.generated',
+  'omdb.generated',
+  'omdb.imdbvotes',
+  'omdb.poster',
+  'subs.created',
+  'subs.generated'
 ];
 
 stats
   .filter((stat) => ignoredStats.indexOf(stat.key) === -1)
-  .map((stat) => ({
+  .filter((stat) => stat.variety > 1)
+  .map((stat, index) => ({
     summary: summaryParse(stat),
-    header: headerParse(stat),
+    header: headerParse(stat, index),
     chart: chartParse(stat)
   }))
   .map((stat) => tag('.stat', [
