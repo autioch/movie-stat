@@ -22,8 +22,21 @@ const ignoredStats = [
   'ffmpeg.unkown[].tags.mimetype',
   'ffmpeg.video[].isAvc',
   'ffmpeg.unkown[].codec_long_name',
+  'ffmpeg.audio[].profile',
+  'ffmpeg.video[].level',
+  'ffmpeg.video[].displayAspectRatio',
   'ffmpeg.subtitle[].disposition[]',
+  'ffmpeg.video[].profile',
+  'ffmpeg.video[].pixFmt',
   'ffmpeg.unkown[].duration'
+];
+
+const statGroups = [
+  'year',
+  'language',
+  'width',
+  'height',
+  'codec'
 ];
 
 function filterStats(stats) {
@@ -40,6 +53,26 @@ function parseStat(stat, index) {
   };
 }
 
+function groupStats(stats) {
+  const groupedStats = [];
+
+  let remainingStats = stats;
+
+  statGroups.forEach((statGroup) => {
+    remainingStats = remainingStats.filter((stat) => {
+      if (stat.key.toLowerCase().includes(statGroup)) {
+        groupedStats.push(stat);
+
+        return false;
+      }
+
+      return true;
+    });
+  });
+
+  return groupedStats.concat(remainingStats);
+}
+
 module.exports = function parse(stats) {
-  return filterStats(stats).map(parseStat);
+  return groupStats(filterStats(stats)).map(parseStat);
 };
