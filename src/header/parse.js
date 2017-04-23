@@ -4,6 +4,8 @@ const bracketRegex = /\[\]/g;
 const ffmpegRegex = /ffmpeg/g;
 const omdbRegex = /omdb/g;
 
+const debug = true;
+
 module.exports = function parseHeader(stat, index) {
   const parsed = stat.key
 
@@ -15,7 +17,7 @@ module.exports = function parseHeader(stat, index) {
     .replace(/\.?([A-Z]+)/g, (match, group) => ` ${group}`)
     .replace(/^_/, '');
 
-  return `${index + 1}. ${parsed} (${stat.key})`;
+  const suffix = debug ? ` (${stat.key})` : '';
 
-  // return parsed;
+  return `${index + 1}. ${parsed}${suffix}`;
 };

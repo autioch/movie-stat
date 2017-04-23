@@ -3,6 +3,30 @@ html {
   color: #444;
 }
 
+body {
+  margin: 0;
+}
+
+.stat-list {
+
+  @media (min-width: 960px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .stat {
   margin-bottom: 3em;
+
+  @media (min-width: 960px) {
+    width: 50%;
+    box-sizing: border-box;
+    border-bottom: solid 1px #eee;
+    padding: 0 .5em;
+
+    &:nth-child(2n-1) {
+      border-right: solid 1px #eee;
+    }
+
+  }
 }

@@ -1,12 +1,18 @@
 /* eslint no-magic-numbers: 0 */
 const scrollSize = 50;
 
+let canvasWidth = window.innerWidth - scrollSize;
+
+if (canvasWidth > 959) {
+  canvasWidth = Math.floor(canvasWidth / 2);
+}
+
 module.exports = {
   chartHeight: 100,
   offsetTop: 5.5,
   half: 0.5,
-  canvasWidth: window.innerWidth - scrollSize,
-  maxBarWidth: 100,
+  canvasWidth,
+  maxBarWidth: 50,
   minBarWidth: 16,
   barSpace: 1,
   labelMargin: 2,
@@ -14,7 +20,8 @@ module.exports = {
   fontSize: 14,
   axisColor: '#aaa',
   helperAxisColor: '#eee',
-  labelColor: '#444',
+  labelColor: '#999',
+  valueColor: '#222',
   serieColors: [
     '#f3f', '#ff3', '#3ff',
     '#f39', '#f93', '#3f9',

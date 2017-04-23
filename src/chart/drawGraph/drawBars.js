@@ -1,24 +1,7 @@
 const {
-  offsetTop, fontSize, half, serieColors, chartHeight, canvasWidth,
-  labelMargin, labelColor, maxBarWidth, barSpace
- } = require('./config');
-
-function getLabelSeries(series, offsetLeft, serieSpace) {
-  if (serieSpace > fontSize) {
-    return series;
-  }
-  const filteredSeries = [];
-  let currentLabelPosition = 0;
-
-  while (currentLabelPosition < canvasWidth - offsetLeft) {
-    const nextIndex = Math.floor(currentLabelPosition / serieSpace);
-
-    filteredSeries.push(series[nextIndex]);
-    currentLabelPosition += fontSize + labelMargin;
-  }
-
-  return filteredSeries;
-}
+  barSpace, canvasWidth, chartHeight, half,
+  labelColor, labelMargin, valueColor, maxBarWidth, offsetTop, serieColors
+} = require('./config');
 
 module.exports = function drawBars(ctx, stat, offsetLeft) {
   const { series, maxValue } = stat;
@@ -27,6 +10,7 @@ module.exports = function drawBars(ctx, stat, offsetLeft) {
   const serieCenterX = offsetLeft + ((serieSpace - barWidth) * half) + barSpace;
   const serieY = offsetTop + chartHeight;
   const labelX = (offsetTop + chartHeight + labelMargin) * -1;
+  const valueX = (offsetTop + chartHeight - labelMargin - labelMargin) * -1;
 
   series
     .map((serie) => (serie.value / maxValue) * chartHeight)
@@ -45,6 +29,11 @@ module.exports = function drawBars(ctx, stat, offsetLeft) {
 
   ctx.rotate(-Math.PI * half);
   ctx.fillStyle = labelColor;
-  getLabelSeries(series, offsetLeft, serieSpace)
+  series
     .forEach((serie) => ctx.fillText(serie.label, labelX, ((serie.index + half) * serieSpace) + offsetLeft));
+
+  ctx.textAlign = 'left';
+  ctx.fillStyle = valueColor;
+  series
+    .forEach((serie) => ctx.fillText(serie.value, valueX, ((serie.index + half) * serieSpace) + offsetLeft));
 };
