@@ -18,11 +18,24 @@ function renderStat(stat) {
   ]);
 }
 
+function getHeaderSuffix(stat, chartData) {
+  const totalSeries = stat.series.length;
+  const chartSeries = chartData.series.length;
+
+  if (totalSeries === chartSeries) {
+    return '';
+  }
+
+  return ` (top ${chartSeries} series of ${totalSeries} total)`;
+}
+
 function parseStat(stat) {
+  const chartData = chartParse(stat);
+
   return {
     summary: stat.summary,
-    header: stat.header,
-    chart: chartParse(stat)
+    header: `${stat.header}${getHeaderSuffix(stat, chartData)}`,
+    chart: chartData
   };
 }
 

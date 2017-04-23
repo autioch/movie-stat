@@ -17,15 +17,18 @@ const rounding = {
 
 function siftSeries(series) {
   const maxSeries = (canvasWidth - defaultLabelWidth) / minBarWidth;
+  let siftedSeries = series;
 
-  if (series.length <= maxSeries) {
-    return series;
+  siftedSeries.forEach((serie, index) => {
+    serie.index = index;
+  });
+
+  if (series.length > maxSeries) {
+    siftedSeries = siftedSeries
+      .sort((serieA, serieB) => serieB.value - serieA.value)
+      .slice(0, maxSeries)
+      .sort((serieA, serieB) => serieA.index - serieB.index);
   }
-
-  const siftedSeries = series
-    .sort((serieA, serieB) => serieB.value - serieA.value)
-    .slice(0, maxSeries)
-    .sort((serieA, serieB) => serieA.index - serieB.index);
 
   siftedSeries.forEach((serie, index) => {
     serie.index = index;
@@ -45,8 +48,8 @@ function getYValues(maxValue) {
   return values;
 }
 
-function getMax(dict) {
-  const maxValue = Math.ceil(Math.max(...Object.keys(dict).map((key) => dict[key])));
+function getMax(series) {
+  const maxValue = Math.ceil(Math.max(...series.map((serie) => serie.value)));
 
   const orderOfMagnitue = maxValue.toString().length;
   const roundingAmount = rounding[orderOfMagnitue];
@@ -59,19 +62,13 @@ function getMax(dict) {
 }
 
 module.exports = function parse(stat) {
-  const maxValue = getMax(stat.dict);
-  const labels = Object.keys(stat.dict);
-
-  const series = labels.map((label, index) => ({
-    index,
-    label,
-    value: stat.dict[label]
-  }));
+  const maxValue = getMax(stat.series);
+  const siftedSeries = siftSeries(stat.series);
 
   return {
     intermediateValues: getYValues(maxValue),
     maxValue,
-    series: siftSeries(series),
-    labels
+    series: siftedSeries,
+    labels: siftedSeries.map((serie) => serie.label)
   };
 };
