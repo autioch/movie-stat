@@ -1,8 +1,14 @@
 [
   {
-    "key": "ffmpeg.audio[].channelLayout",
+    "header": "ffmpeg.audio[].channelLayout",
     "type": "string",
     "count": 894,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 7,
     "dict": {
       "3": 1,
@@ -15,13 +21,19 @@
     }
   },
   {
-    "key": "ffmpeg.audio[].channels",
+    "header": "ffmpeg.audio[].channels",
     "type": "number",
     "count": 894,
     "min": 1,
     "max": 8,
     "sum": 3306,
     "average": 4,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 5,
     "weighted": 4,
     "dict": {
@@ -33,22 +45,34 @@
     }
   },
   {
-    "key": "ffmpeg.audio[].codecLongName",
+    "header": "ffmpeg.audio[].codecLongName",
     "type": "string",
     "count": 894,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 5,
     "dict": {
       "AAC (Advanced Audio Coding)": 639,
       "ATSC A/52A (AC-3)": 175,
       "DCA (DTS Coherent Acoustics)": 52,
       "FLAC (Free Lossless Audio Codec)": 2,
-      "MP3 (MPEG audio layer 3)": 26
+      "MP3 (MPEG audio\nlayer 3)": 26
     }
   },
   {
-    "key": "ffmpeg.audio[].codecName",
+    "header": "ffmpeg.audio[].codecName",
     "type": "string",
     "count": 894,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 5,
     "dict": {
       "aac": 639,
@@ -59,9 +83,15 @@
     }
   },
   {
-    "key": "ffmpeg.audio[].language",
+    "header": "ffmpeg.audio[].language",
     "type": "string",
     "count": 894,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 20,
     "dict": {
       "?": 111,
@@ -87,9 +117,15 @@
     }
   },
   {
-    "key": "ffmpeg.audio[].profile",
+    "header": "ffmpeg.audio[].profile",
     "type": "string",
     "count": 894,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 5,
     "dict": {
       "DTS": 50,
@@ -100,13 +136,19 @@
     }
   },
   {
-    "key": "ffmpeg.duration",
+    "header": "ffmpeg.duration",
     "type": "number",
     "count": 738,
     "min": 237,
     "max": 14480,
     "sum": 4990790,
     "average": 6782,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 681,
     "weighted": 6763,
     "dict": {
@@ -794,9 +836,15 @@
     }
   },
   {
-    "key": "ffmpeg.formatLongName",
+    "header": "ffmpeg.formatLongName",
     "type": "string",
     "count": 738,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 3,
     "dict": {
       "AVI (Audio Video Interleaved)": 63,
@@ -805,9 +853,15 @@
     }
   },
   {
-    "key": "ffmpeg.formatName",
+    "header": "ffmpeg.formatName",
     "type": "string",
     "count": 738,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 3,
     "dict": {
       "avi": 63,
@@ -816,9 +870,15 @@
     }
   },
   {
-    "key": "ffmpeg.generated",
+    "header": "ffmpeg.generated",
     "type": "string",
     "count": 738,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 734,
     "dict": {
       "2017-02-20T20:56:15.858Z": 1,
@@ -1558,9 +1618,15 @@
     }
   },
   {
-    "key": "ffmpeg.subtitle[].codecLongName",
+    "header": "ffmpeg.subtitle[].codecLongName",
     "type": "string",
     "count": 675,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 6,
     "dict": {
       "ASS (Advanced SSA) subtitle": 21,
@@ -1572,9 +1638,15 @@
     }
   },
   {
-    "key": "ffmpeg.subtitle[].codecName",
+    "header": "ffmpeg.subtitle[].codecName",
     "type": "string",
     "count": 675,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 6,
     "dict": {
       "ass": 21,
@@ -1586,9 +1658,15 @@
     }
   },
   {
-    "key": "ffmpeg.subtitle[].disposition[]",
+    "header": "ffmpeg.subtitle[].disposition[]",
     "type": "string",
     "count": 70,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 2,
     "dict": {
       "default": 65,
@@ -1596,9 +1674,15 @@
     }
   },
   {
-    "key": "ffmpeg.subtitle[].language",
+    "header": "ffmpeg.subtitle[].language",
     "type": "string",
     "count": 675,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 51,
     "dict": {
       "?": 15,
@@ -1655,45 +1739,75 @@
     }
   },
   {
-    "key": "ffmpeg.subtitle[].profile",
+    "header": "ffmpeg.subtitle[].profile",
     "type": "string",
     "count": 675,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "unknown": 675
     }
   },
   {
-    "key": "ffmpeg.unkown[].avg_frame_rate",
+    "header": "ffmpeg.unkown[].avg_frame_rate",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "0/0": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].bit_rate",
+    "header": "ffmpeg.unkown[].bit_rate",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].bits_per_raw_sample",
+    "header": "ffmpeg.unkown[].bits_per_raw_sample",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].codec_long_name",
+    "header": "ffmpeg.unkown[].codec_long_name",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 2,
     "dict": {
       "OpenType font": 6,
@@ -1701,9 +1815,15 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].codec_name",
+    "header": "ffmpeg.unkown[].codec_name",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 2,
     "dict": {
       "otf": 6,
@@ -1711,40 +1831,64 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].codec_tag",
+    "header": "ffmpeg.unkown[].codec_tag",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "0x0000": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].codec_tag_string",
+    "header": "ffmpeg.unkown[].codec_tag_string",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "[0][0][0][0]": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].codec_type",
+    "header": "ffmpeg.unkown[].codec_type",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "attachment": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.attached_pic",
+    "header": "ffmpeg.unkown[].disposition.attached_pic",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1752,13 +1896,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.clean_effects",
+    "header": "ffmpeg.unkown[].disposition.clean_effects",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1766,13 +1916,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.comment",
+    "header": "ffmpeg.unkown[].disposition.comment",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1780,13 +1936,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.default",
+    "header": "ffmpeg.unkown[].disposition.default",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1794,13 +1956,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.dub",
+    "header": "ffmpeg.unkown[].disposition.dub",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1808,13 +1976,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.forced",
+    "header": "ffmpeg.unkown[].disposition.forced",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1822,13 +1996,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.hearing_impaired",
+    "header": "ffmpeg.unkown[].disposition.hearing_impaired",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1836,13 +2016,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.karaoke",
+    "header": "ffmpeg.unkown[].disposition.karaoke",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1850,13 +2036,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.lyrics",
+    "header": "ffmpeg.unkown[].disposition.lyrics",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1864,13 +2056,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.original",
+    "header": "ffmpeg.unkown[].disposition.original",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1878,13 +2076,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].disposition.visual_impaired",
+    "header": "ffmpeg.unkown[].disposition.visual_impaired",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -1892,13 +2096,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].duration",
+    "header": "ffmpeg.unkown[].duration",
     "type": "number",
     "count": 38,
     "min": 5929.952,
     "max": 8005.4,
     "sum": 243486.75300000003,
     "average": 7168,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 4,
     "weighted": 6408,
     "dict": {
@@ -1909,13 +2119,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].duration_ts",
+    "header": "ffmpeg.unkown[].duration_ts",
     "type": "number",
     "count": 38,
     "min": 533695680,
     "max": 720486000,
     "sum": 21913807770,
     "average": 645100313,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 4,
     "weighted": 576679152,
     "dict": {
@@ -1926,22 +2142,34 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].id",
+    "header": "ffmpeg.unkown[].id",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].index",
+    "header": "ffmpeg.unkown[].index",
     "type": "number",
     "count": 38,
     "min": 4,
     "max": 36,
     "sum": 683,
     "average": 21,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 31,
     "weighted": 18,
     "dict": {
@@ -1979,67 +2207,109 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].max_bit_rate",
+    "header": "ffmpeg.unkown[].max_bit_rate",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].nb_frames",
+    "header": "ffmpeg.unkown[].nb_frames",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].nb_read_frames",
+    "header": "ffmpeg.unkown[].nb_read_frames",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].nb_read_packets",
+    "header": "ffmpeg.unkown[].nb_read_packets",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "N/A": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].profile",
+    "header": "ffmpeg.unkown[].profile",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "unknown": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].r_frame_rate",
+    "header": "ffmpeg.unkown[].r_frame_rate",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "0/0": 38
     }
   },
   {
-    "key": "ffmpeg.unkown[].start_pts",
+    "header": "ffmpeg.unkown[].start_pts",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -2047,13 +2317,19 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].start_time",
+    "header": "ffmpeg.unkown[].start_time",
     "type": "number",
     "count": 38,
     "min": 0,
     "max": 0,
     "sum": 0,
     "average": 0,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "weighted": 0,
     "dict": {
@@ -2061,9 +2337,15 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].tags.filename",
+    "header": "ffmpeg.unkown[].tags.filename",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 27,
     "dict": {
       "Bolide-Regular.ttf": 1,
@@ -2074,7 +2356,7 @@
       "CALJOETRIAL.otf": 1,
       "CaviarDreams_Bold.ttf": 1,
       "Fira Sans uzf mod italic.otf": 2,
-      "Fira Sans uzf mod.otf": 2,
+      "Fira\nSans uzf mod.otf": 2,
       "FromageCondOblique.ttf": 1,
       "HelveticaNeueLTCom-MdSemiEx.ttf": 1,
       "HelveticaNeueLTCom-MdSemiExO.ttf": 1,
@@ -2096,9 +2378,15 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].tags.mimetype",
+    "header": "ffmpeg.unkown[].tags.mimetype",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 2,
     "dict": {
       "application/vnd.ms-opentype": 6,
@@ -2106,18 +2394,30 @@
     }
   },
   {
-    "key": "ffmpeg.unkown[].time_base",
+    "header": "ffmpeg.unkown[].time_base",
     "type": "string",
     "count": 38,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "1/90000": 38
     }
   },
   {
-    "key": "ffmpeg.video[].codecLongName",
+    "header": "ffmpeg.video[].codecLongName",
     "type": "string",
     "count": 758,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 7,
     "dict": {
       "BMP (Windows and OS/2 bitmap)": 1,
@@ -2126,13 +2426,19 @@
       "MPEG-4 part 2": 58,
       "MPEG-4 part 2 Microsoft variant version 3": 3,
       "Motion JPEG": 16,
-      "PNG (Portable Network Graphics) image": 3
+      "PNG (Portable Network Graphics)\nimage": 3
     }
   },
   {
-    "key": "ffmpeg.video[].codecName",
+    "header": "ffmpeg.video[].codecName",
     "type": "string",
     "count": 758,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 7,
     "dict": {
       "bmp": 1,
@@ -2145,9 +2451,15 @@
     }
   },
   {
-    "key": "ffmpeg.video[].displayAspectRatio",
+    "header": "ffmpeg.video[].displayAspectRatio",
     "type": "string",
     "count": 758,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 92,
     "dict": {
       "0:1": 137,
@@ -2245,13 +2557,19 @@
     }
   },
   {
-    "key": "ffmpeg.video[].duration",
+    "header": "ffmpeg.video[].duration",
     "type": "number",
     "count": 758,
     "min": 237,
     "max": 14480,
     "sum": 3573941,
     "average": null,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 491,
     "weighted": null,
     "dict": {
@@ -2749,13 +3067,19 @@
     }
   },
   {
-    "key": "ffmpeg.video[].fps",
+    "header": "ffmpeg.video[].fps",
     "type": "number",
     "count": 758,
     "min": 24,
     "max": 90000,
     "sum": 1817801,
     "average": 22520,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 4,
     "weighted": 2398,
     "dict": {
@@ -2766,13 +3090,19 @@
     }
   },
   {
-    "key": "ffmpeg.video[].hasBFrames",
+    "header": "ffmpeg.video[].hasBFrames",
     "type": "number",
     "count": 758,
     "min": 0,
     "max": 2,
     "sum": 1342,
     "average": 1,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 3,
     "weighted": 2,
     "dict": {
@@ -2782,13 +3112,19 @@
     }
   },
   {
-    "key": "ffmpeg.video[].height",
+    "header": "ffmpeg.video[].height",
     "type": "number",
     "count": 758,
     "min": 120,
     "max": 2400,
     "sum": 585270,
     "average": 663,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 78,
     "weighted": 772,
     "dict": {
@@ -2873,9 +3209,15 @@
     }
   },
   {
-    "key": "ffmpeg.video[].isAvc",
+    "header": "ffmpeg.video[].isAvc",
     "type": "string",
     "count": 622,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 3,
     "dict": {
       "false": 2,
@@ -2884,9 +3226,15 @@
     }
   },
   {
-    "key": "ffmpeg.video[].language",
+    "header": "ffmpeg.video[].language",
     "type": "string",
     "count": 758,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 6,
     "dict": {
       "?": 199,
@@ -2898,13 +3246,19 @@
     }
   },
   {
-    "key": "ffmpeg.video[].level",
+    "header": "ffmpeg.video[].level",
     "type": "number",
     "count": 758,
     "min": -99,
     "max": 150,
     "sum": 29467,
     "average": 39,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 16,
     "weighted": 39,
     "dict": {
@@ -2927,9 +3281,15 @@
     }
   },
   {
-    "key": "ffmpeg.video[].pixFmt",
+    "header": "ffmpeg.video[].pixFmt",
     "type": "string",
     "count": 758,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 7,
     "dict": {
       "bgra": 1,
@@ -2942,12 +3302,18 @@
     }
   },
   {
-    "key": "ffmpeg.video[].profile",
+    "header": "ffmpeg.video[].profile",
     "type": "string",
     "count": 758,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 10,
     "dict": {
-      "Advanced Simple Profile": 52,
+      "Advanced Simple\nProfile": 52,
       "Baseline": 1,
       "Constrained Baseline": 4,
       "High": 592,
@@ -2960,13 +3326,19 @@
     }
   },
   {
-    "key": "ffmpeg.video[].width",
+    "header": "ffmpeg.video[].width",
     "type": "number",
     "count": 758,
     "min": 120,
     "max": 1920,
     "sum": 1223442,
     "average": 991,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 43,
     "weighted": 1614,
     "dict": {
@@ -3016,9 +3388,15 @@
     }
   },
   {
-    "key": "file.ext",
+    "header": "file.ext",
     "type": "string",
     "count": 738,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 4,
     "dict": {
       "avi": 63,
@@ -3028,9 +3406,15 @@
     }
   },
   {
-    "key": "file.generated",
+    "header": "file.generated",
     "type": "string",
     "count": 738,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 91,
     "dict": {
       "2017-02-20T20:56:15.351Z": 2,
@@ -3127,9 +3511,15 @@
     }
   },
   {
-    "key": "omdb.actors[]",
+    "header": "omdb.actors[]",
     "type": "string",
     "count": 2849,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1747,
     "dict": {
       "A. Russell Andrews": 1,
@@ -3144,7 +3534,7 @@
       "Adam Cockburn": 1,
       "Adam Darski": 1,
       "Adam Devine": 2,
-      "Adam Driver": 1,
+      "Adam\nDriver": 1,
       "Adam Green": 1,
       "Adam Sandler": 4,
       "Adam Scott": 1,
@@ -3194,7 +3584,7 @@
       "Allan Kolman": 1,
       "Allen Evangelista": 1,
       "Ally Sheedy": 1,
-      "Almudena León": 1,
+      "Almudena\nLeón": 1,
       "Alon Aboutboul": 1,
       "Alyson Hannigan": 4,
       "Amanda De Cadenet": 1,
@@ -3206,7 +3596,7 @@
       "Ambrosia Kelley": 1,
       "America Ferrera": 1,
       "Amitabh Bachchan": 1,
-      "Aml Ameen": 1,
+      "Aml\nAmeen": 1,
       "Amr Waked": 1,
       "Amrish Puri": 1,
       "Amy Adams": 5,
@@ -3245,7 +3635,7 @@
       "Annalee Jefferies": 1,
       "Anne Hathaway": 3,
       "Anne Le Ny": 1,
-      "Anne Parillaud": 1,
+      "Anne\nParillaud": 1,
       "Annette Bening": 2,
       "Annie McEnroe": 1,
       "Anthony Cirillo": 1,
@@ -3257,7 +3647,7 @@
       "Antonio Banderas": 3,
       "Anya Taylor-Joy": 1,
       "Aoi Yuki": 1,
-      "Arbaaz Ali Khan": 1,
+      "Arbaaz Ali\nKhan": 1,
       "Ariel Casas": 1,
       "Arielle Kebbel": 1,
       "Arliss Howard": 1,
@@ -3269,7 +3659,7 @@
       "Asa Butterfield": 1,
       "Ashley Boettcher": 1,
       "Ashley Greene": 1,
-      "Ashley Judd": 1,
+      "Ashley\nJudd": 1,
       "Ashley Sommers": 1,
       "Ashley Tisdale": 1,
       "Ashton Kutcher": 3,
@@ -3346,7 +3736,7 @@
       "Brett Cullen": 1,
       "Brian Cox": 1,
       "Brian Dennehy": 2,
-      "Bridget Moynahan": 2,
+      "Bridget\nMoynahan": 2,
       "Brion James": 1,
       "Brit Marling": 1,
       "Britt Robertson": 1,
@@ -3419,7 +3809,7 @@
       "Chris Evans": 7,
       "Chris Hemsworth": 6,
       "Chris Klein": 2,
-      "Chris Miller": 1,
+      "Chris\nMiller": 1,
       "Chris O'Donnell": 1,
       "Chris Pine": 6,
       "Chris Pratt": 4,
@@ -3431,7 +3821,7 @@
       "Christian Slater": 1,
       "Christina Aguilera": 1,
       "Christina Applegate": 4,
-      "Christina Milian": 1,
+      "Christina\nMilian": 1,
       "Christine Anu": 1,
       "Christine Tomlinson": 1,
       "Christoph Waltz": 2,
@@ -3453,7 +3843,7 @@
       "Clark Duke": 2,
       "Clark Gregg": 2,
       "Claude Akins": 1,
-      "Claudia Christian": 1,
+      "Claudia\nChristian": 1,
       "Claudia Lee": 1,
       "Clea DuVall": 1,
       "Clifton Collins Jr.": 1,
@@ -3466,7 +3856,7 @@
       "Colin Salmon": 1,
       "Colm Feore": 1,
       "Connie Nielsen": 2,
-      "Conrad Vernon": 1,
+      "Conrad\nVernon": 1,
       "Corey Burton": 1,
       "Corey Johnson": 1,
       "Corey Stoll": 1,
@@ -3492,7 +3882,7 @@
       "Dan Birnbaum": 1,
       "Dan O'Herlihy": 1,
       "Dana Hill": 2,
-      "Dana Wheeler-Nicholson": 1,
+      "Dana\nWheeler-Nicholson": 1,
       "Dane Cook": 1,
       "Dane DeHaan": 2,
       "Daniel Craig": 2,
@@ -3517,7 +3907,7 @@
       "Danny McBride": 1,
       "Danuta Stenka": 1,
       "Daphne Zuniga": 1,
-      "Dariusz Biskupski": 1,
+      "Dariusz\nBiskupski": 1,
       "Darryl Cooksey": 1,
       "Daryl Hannah": 5,
       "Darío Grandinetti": 1,
@@ -3568,7 +3958,7 @@
       "Denis Leary": 4,
       "Denis Rafter": 1,
       "Denise Richards": 1,
-      "Dennis Quaid": 3,
+      "Dennis\nQuaid": 3,
       "Denzel Washington": 3,
       "Derek Jacobi": 1,
       "Dermot Mulroney": 1,
@@ -3581,7 +3971,7 @@
       "Diane Venora": 1,
       "Dianna Agron": 1,
       "Diego Klattenhoff": 1,
-      "Diego Luna": 2,
+      "Diego\nLuna": 2,
       "Diego Martín": 1,
       "Dimitri Diatchenko": 1,
       "Dina Meyer": 1,
@@ -3593,7 +3983,7 @@
       "Dominic Cooper": 3,
       "Dominic Purcell": 2,
       "Dominic West": 2,
-      "Dominique Pinon": 1,
+      "Dominique\nPinon": 1,
       "Don Ameche": 2,
       "Don Cheadle": 2,
       "Don Johnson": 1,
@@ -3684,7 +4074,7 @@
       "Eva Green": 2,
       "Eva Mendes": 1,
       "Evan Peters": 2,
-      "Evangeline Lilly": 1,
+      "Evangeline\nLilly": 1,
       "Ewan McGregor": 8,
       "Ewen Bremner": 1,
       "Fairuza Balk": 1,
@@ -3747,7 +4137,7 @@
       "Grace Huang": 1,
       "Graham Greene": 2,
       "Greg Bryk": 1,
-      "Greg Germann": 1,
+      "Greg\nGermann": 1,
       "Greg Polak": 1,
       "Gregor Fisher": 1,
       "Gregory Peck": 1,
@@ -3823,7 +4213,7 @@
       "Jacob Pitts": 1,
       "Jacob Warner": 1,
       "Jacqueline Kim": 1,
-      "Jada Pinkett Smith": 3,
+      "Jada\nPinkett Smith": 3,
       "Jaden Smith": 1,
       "Jae Head": 1,
       "Jai Courtney": 4,
@@ -3836,7 +4226,7 @@
       "James Brown": 1,
       "James Caan": 4,
       "James Carpinello": 1,
-      "James Coburn": 1,
+      "James\nCoburn": 1,
       "James Cromwell": 2,
       "James Davidson": 1,
       "James Doohan": 6,
@@ -3862,7 +4252,7 @@
       "Jane Levy": 1,
       "Janet Leigh": 1,
       "Janusz Rewinski": 1,
-      "Jared Leto": 3,
+      "Jared\nLeto": 3,
       "Jason Alexander": 2,
       "Jason Bateman": 4,
       "Jason Biggs": 3,
@@ -3901,7 +4291,7 @@
       "Jennifer Aniston": 4,
       "Jennifer Carpenter": 1,
       "Jennifer Connelly": 3,
-      "Jennifer Garner": 2,
+      "Jennifer\nGarner": 2,
       "Jennifer Lawrence": 7,
       "Jennifer Rubin": 1,
       "Jenny Slate": 2,
@@ -3940,7 +4330,7 @@
       "Joanna Brodzik": 1,
       "Joanna Cassidy": 1,
       "Joanna Fidler": 1,
-      "Joanna Kulig": 1,
+      "Joanna\nKulig": 1,
       "Joanne Samuel": 1,
       "Joaquim de Almeida": 1,
       "Joaquin Phoenix": 2,
@@ -3966,7 +4356,7 @@
       "John Bach": 1,
       "John Belushi": 1,
       "John Boyega": 1,
-      "John Candy": 2,
+      "John\nCandy": 2,
       "John Cusack": 3,
       "John DiMaggio": 1,
       "John Gallagher Jr.": 1,
@@ -4017,7 +4407,7 @@
       "Josh Ethier": 1,
       "Josh Gad": 2,
       "Josh Hartnett": 3,
-      "Josh Hutcherson": 2,
+      "Josh\nHutcherson": 2,
       "Josh Keaton": 1,
       "Josh Lucas": 1,
       "Joshua Close": 1,
@@ -4043,7 +4433,7 @@
       "Justin Bartha": 2,
       "Justin Chatwin": 1,
       "Justin Long": 1,
-      "Justin Timberlake": 2,
+      "Justin\nTimberlake": 2,
       "Jûrôta Kosugi": 1,
       "Jürgen Prochnow": 1,
       "Kaitlin Olson": 1,
@@ -4118,7 +4508,7 @@
       "Kristin Kreuk": 1,
       "Kristina Klebe": 1,
       "Kristine Sutherland": 1,
-      "Krzysztof Globisz": 1,
+      "Krzysztof\nGlobisz": 1,
       "Kurt Russell": 4,
       "Kyle MacLachlan": 1,
       "Kyle Soller": 1,
@@ -4131,7 +4521,7 @@
       "Lari White": 1,
       "Laura Dern": 1,
       "Laura Harring": 1,
-      "Laura Harris": 1,
+      "Laura\nHarris": 1,
       "Laura Linney": 1,
       "Laura Lovelace": 1,
       "Laura Ramsey": 1,
@@ -4143,7 +4533,7 @@
       "Lawrence A. Bonney": 1,
       "Lawrence T. Wrentz": 1,
       "LeVar Burton": 4,
-      "Lea Salonga": 1,
+      "Lea\nSalonga": 1,
       "Lea Thompson": 3,
       "Lee J. Cobb": 1,
       "Lee Richardson": 1,
@@ -4194,7 +4584,7 @@
       "Luca Bercovici": 1,
       "Lucas Till": 1,
       "Lucy Liu": 2,
-      "Lukasz Garlicki": 1,
+      "Lukasz\nGarlicki": 1,
       "Luke Evans": 1,
       "Luke Ford": 1,
       "Luke Hemsworth": 1,
@@ -4267,7 +4657,7 @@
       "Mary-Louise Parker": 2,
       "María Marull": 1,
       "Matt Barr": 1,
-      "Matt Bomer": 1,
+      "Matt\nBomer": 1,
       "Matt Craven": 1,
       "Matt Damon": 6,
       "Matt Frewer": 1,
@@ -4352,7 +4742,7 @@
       "Mickey Rourke": 1,
       "Mieczyslaw Czechowicz": 1,
       "Miho Yamada": 1,
-      "Mike Epps": 1,
+      "Mike\nEpps": 1,
       "Mike Myers": 5,
       "Mila Kunis": 6,
       "Miles Teller": 1,
@@ -4391,7 +4781,7 @@
       "Nicholas Brendon": 1,
       "Nicholas Hoult": 2,
       "Nick Frost": 1,
-      "Nick Nolte": 1,
+      "Nick\nNolte": 1,
       "Nick Stahl": 1,
       "Nick Swardson": 1,
       "Nicola Peltz": 1,
@@ -4404,7 +4794,7 @@
       "Noah Emmerich": 1,
       "Noble Willingham": 1,
       "Nobuhiko Okamoto": 1,
-      "Noel Appleby": 2,
+      "Noel\nAppleby": 2,
       "Noomi Rapace": 2,
       "Noriko Hidaka": 1,
       "Norman Reedus": 2,
@@ -4417,7 +4807,7 @@
       "Oliver Platt": 1,
       "Oliver Reed": 2,
       "Olivia DeJonge": 1,
-      "Olivia Taylor Dudley": 1,
+      "Olivia\nTaylor Dudley": 1,
       "Olivia Wilde": 3,
       "Olivia Williams": 3,
       "Omar Avila": 1,
@@ -4430,7 +4820,7 @@
       "Oscar Pearce": 1,
       "Owen Wilson": 1,
       "Pablo Rosso": 1,
-      "Pam Ferris": 1,
+      "Pam\nFerris": 1,
       "Pat Carroll": 1,
       "Patrick Fontana": 1,
       "Patrick Stewart": 9,
@@ -4468,7 +4858,7 @@
       "Pierce Brosnan": 2,
       "Piotr Adamczyk": 1,
       "Piper Perabo": 1,
-      "Porteus Xandau": 1,
+      "Porteus\nXandau": 1,
       "Powers Boothe": 1,
       "Prince David Oseia": 1,
       "Queen Latifah": 1,
@@ -4506,7 +4896,7 @@
       "Rene Auberjonois": 1,
       "Rene Russo": 2,
       "Renée Zellweger": 2,
-      "Rhona Mitra": 1,
+      "Rhona\nMitra": 1,
       "Rhys Ifans": 2,
       "Richard Armitage": 3,
       "Richard Attenborough": 1,
@@ -4593,7 +4983,7 @@
       "Roy Scheider": 1,
       "Rubén Blades": 1,
       "Rufus Sewell": 1,
-      "Rupert Evans": 1,
+      "Rupert\nEvans": 1,
       "Rupert Friend": 1,
       "Rupert Grint": 1,
       "Rupert Penry-Jones": 1,
@@ -4632,7 +5022,7 @@
       "Saoirse Ronan": 2,
       "Sarah Bolger": 1,
       "Sarah Gadon": 1,
-      "Sarah Mahoney": 1,
+      "Sarah\nMahoney": 1,
       "Sarah Polley": 1,
       "Sarah Snook": 1,
       "Saul Rubinek": 1,
@@ -4705,7 +5095,7 @@
       "Steve Bisley": 2,
       "Steve Blum": 1,
       "Steve Buscemi": 2,
-      "Steve Carell": 4,
+      "Steve\nCarell": 4,
       "Steve Forrest": 1,
       "Steve Guttenberg": 1,
       "Steve Harris": 1,
@@ -4717,7 +5107,7 @@
       "Steven Pasquale": 1,
       "Steven Strait": 1,
       "Stuart Townsend": 1,
-      "Sugar Lyn Beard": 1,
+      "Sugar\nLyn Beard": 1,
       "Summer H. Howell": 1,
       "Sunny Singh": 1,
       "Susan Norman": 1,
@@ -4729,7 +5119,7 @@
       "T.K. Carter": 1,
       "Tad Hilgenbrink": 1,
       "Takahiro Sakurai": 1,
-      "Takuya Kimura": 1,
+      "Takuya\nKimura": 1,
       "Talia Shire": 1,
       "Tanveer K. Atwal": 1,
       "Tao Okamoto": 1,
@@ -4742,7 +5132,7 @@
       "Teri Garr": 1,
       "Teri Polo": 1,
       "Terrence Howard": 1,
-      "Terry Crews": 1,
+      "Terry\nCrews": 1,
       "Terry Kinney": 1,
       "Terry Notary": 1,
       "Tesshô Genda": 1,
@@ -4795,7 +5185,7 @@
       "Tony Todd": 1,
       "Topher Grace": 2,
       "Tracey Ullman": 1,
-      "Travis Fimmel": 1,
+      "Travis\nFimmel": 1,
       "Troy Garity": 1,
       "Tsuyoshi Ihara": 1,
       "Tyler Labine": 1,
@@ -4832,7 +5222,7 @@
       "Wes Bentley": 2,
       "Wesley Snipes": 3,
       "Whitney Able": 1,
-      "Wilford Brimley": 3,
+      "Wilford\nBrimley": 3,
       "Will Arnett": 1,
       "Will Barratt": 1,
       "Will Forte": 1,
@@ -4845,7 +5235,7 @@
       "William Atherton": 1,
       "William Baldwin": 1,
       "William Daniels": 1,
-      "William H. Macy": 1,
+      "William\nH. Macy": 1,
       "William Hickey": 1,
       "William Hurt": 4,
       "William Mapother": 1,
@@ -4870,7 +5260,7 @@
       "Zach Grenier": 1,
       "Zach Hudson": 1,
       "Zach Woods": 1,
-      "Zachary Levi": 1,
+      "Zachary\nLevi": 1,
       "Zachary Quinto": 3,
       "Zack Duhame": 1,
       "Zoe Saldana": 4,
@@ -4882,9 +5272,15 @@
     }
   },
   {
-    "key": "omdb.country[]",
+    "header": "omdb.country[]",
     "type": "string",
     "count": 1038,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 36,
     "dict": {
       "Argentina": 2,
@@ -4926,9 +5322,15 @@
     }
   },
   {
-    "key": "omdb.director[]",
+    "header": "omdb.director[]",
     "type": "string",
     "count": 819,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 508,
     "dict": {
       "Abel Ferrara": 1,
@@ -4947,7 +5349,7 @@
       "Alexandre Rockwell": 1,
       "Alfonso Cuarón": 2,
       "Alfred Hitchcock": 1,
-      "Allen Hughes": 1,
+      "Allen\nHughes": 1,
       "Allison Anders": 1,
       "Amy Heckerling": 2,
       "Andrew Adamson": 4,
@@ -4973,7 +5375,7 @@
       "Ben Smallbone": 1,
       "Bernard Rose": 1,
       "Björn Stein": 1,
-      "Blake Edwards": 1,
+      "Blake\nEdwards": 1,
       "Brad Bird": 2,
       "Brad Peyton": 1,
       "Bradley Parker": 1,
@@ -4986,7 +5388,7 @@
       "Bryan Singer": 5,
       "Burr Steers": 1,
       "Byron Howard": 2,
-      "Cameron Crowe": 2,
+      "Cameron\nCrowe": 2,
       "Carlos Saldanha": 3,
       "Carter Smith": 1,
       "Cecil B. DeMille": 1,
@@ -5010,7 +5412,7 @@
       "Christopher Nolan": 5,
       "Chuck Russell": 1,
       "Clay Kaytis": 1,
-      "Clint Eastwood": 2,
+      "Clint\nEastwood": 2,
       "Clint Walker": 1,
       "Cody Cameron": 2,
       "Colin Strause": 2,
@@ -5035,7 +5437,7 @@
       "David Cronenberg": 2,
       "David F. Sandberg": 1,
       "David Fincher": 5,
-      "David Frankel": 2,
+      "David\nFrankel": 2,
       "David Gelb": 1,
       "David Lowery": 1,
       "David Lynch": 2,
@@ -5074,7 +5476,7 @@
       "Francis Ford Coppola": 3,
       "Francis Lawrence": 5,
       "Frank Darabont": 2,
-      "Frank Miller": 1,
+      "Frank\nMiller": 1,
       "Frank Oz": 1,
       "Frank Paur": 1,
       "Franklin J. Schaffner": 1,
@@ -5087,7 +5489,7 @@
       "Gary Chapman": 1,
       "Gary Fleder": 1,
       "Gary Ross": 1,
-      "Gary Shore": 1,
+      "Gary\nShore": 1,
       "Gary Trousdale": 2,
       "Gavin Hood": 1,
       "Genndy Tartakovsky": 2,
@@ -5112,7 +5514,7 @@
       "Herbert Ross": 1,
       "Hironobu Sakaguchi": 1,
       "Hirotoshi Rissen": 1,
-      "Howard Deutch": 1,
+      "Howard\nDeutch": 1,
       "Howard J. Ford": 1,
       "Iain Softley": 2,
       "Ilya Naishuller": 1,
@@ -5137,7 +5539,7 @@
       "Jay Oliva": 1,
       "Jay Roach": 4,
       "Jean-François Richet": 1,
-      "Jean-Pierre Jeunet": 1,
+      "Jean-Pierre\nJeunet": 1,
       "Jeff Kanew": 1,
       "Jeff Nichols": 1,
       "Jeff Schaffer": 1,
@@ -5177,7 +5579,7 @@
       "Jon Favreau": 2,
       "Jon Lucas": 1,
       "Jon M. Chu": 1,
-      "Jonas Pate": 1,
+      "Jonas\nPate": 1,
       "Jonathan Demme": 1,
       "Jonathan Ford": 1,
       "Jonathan Frakes": 2,
@@ -5189,7 +5591,7 @@
       "Joseph Kosinski": 2,
       "Josh Trank": 2,
       "Joss Whedon": 3,
-      "José Padilha": 1,
+      "José\nPadilha": 1,
       "Juan Carlos Fresnadillo": 1,
       "Juan Solanas": 1,
       "Judd Apatow": 1,
@@ -5201,7 +5603,7 @@
       "Katsuhiro Ôtomo": 1,
       "Kazuhisa Takenouchi": 1,
       "Kelly Asbury": 1,
-      "Kenneth Branagh": 2,
+      "Kenneth\nBranagh": 2,
       "Kenneth Johnson": 1,
       "Kerry Conran": 1,
       "Kevin Costner": 1,
@@ -5227,7 +5629,7 @@
       "Luke Scott": 1,
       "M. Night Shyamalan": 5,
       "Maciej Slesicki": 1,
-      "Mamoru Oshii": 2,
+      "Mamoru\nOshii": 2,
       "Marc Forster": 1,
       "Marc Webb": 2,
       "Mark Dindal": 1,
@@ -5278,7 +5680,7 @@
       "Nic Mathieu": 1,
       "Nicholas Meyer": 2,
       "Nicholas Stoller": 1,
-      "Nimród Antal": 2,
+      "Nimród\nAntal": 2,
       "Olaf Lubaszenko": 1,
       "Oliver Hirschbiegel": 1,
       "Olivier Megaton": 2,
@@ -5316,7 +5718,7 @@
       "Rawson Marshall Thurber": 2,
       "Renny Harlin": 2,
       "Rich Moore": 1,
-      "Richard Benjamin": 1,
+      "Richard\nBenjamin": 1,
       "Richard Curtis": 1,
       "Richard Donner": 3,
       "Richard Fleischer": 1,
@@ -5391,7 +5793,7 @@
       "Steven Spielberg": 16,
       "Stuart Baird": 1,
       "Stuart Orme": 1,
-      "Tadeusz Chmielewski": 1,
+      "Tadeusz\nChmielewski": 1,
       "Takeshi Nozue": 2,
       "Tarsem Singh": 2,
       "Ted Kotcheff": 1,
@@ -5404,7 +5806,7 @@
       "Tim Miller": 1,
       "Tim Story": 2,
       "Timur Bekmambetov": 2,
-      "Toby Tobias": 1,
+      "Toby\nTobias": 1,
       "Todd Phillips": 2,
       "Todd Wilderman": 1,
       "Tom Ellery": 1,
@@ -5418,7 +5820,7 @@
       "Tomm Moore": 1,
       "Tony Bancroft": 1,
       "Tony Gilroy": 1,
-      "Tony Scott": 2,
+      "Tony\nScott": 2,
       "Troy Duffy": 2,
       "Vanessa Parise": 1,
       "Vicky Jenson": 1,
@@ -5442,9 +5844,15 @@
     }
   },
   {
-    "key": "omdb.generated",
+    "header": "omdb.generated",
     "type": "string",
     "count": 717,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 708,
     "dict": {
       "2017-02-20T20:57:29.813Z": 1,
@@ -6158,9 +6566,15 @@
     }
   },
   {
-    "key": "omdb.genre[]",
+    "header": "omdb.genre[]",
     "type": "string",
     "count": 1908,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 22,
     "dict": {
       "Action": 312,
@@ -6188,13 +6602,19 @@
     }
   },
   {
-    "key": "omdb.imdbrating",
+    "header": "omdb.imdbrating",
     "type": "number",
     "count": 717,
     "min": 31,
     "max": 93,
     "sum": 48721,
     "average": null,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 56,
     "weighted": null,
     "dict": {
@@ -6257,13 +6677,19 @@
     }
   },
   {
-    "key": "omdb.imdbvotes",
+    "header": "omdb.imdbvotes",
     "type": "number",
     "count": 717,
     "min": 13,
     "max": 1771273,
     "sum": 168597769,
     "average": null,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 708,
     "weighted": null,
     "dict": {
@@ -6978,9 +7404,15 @@
     }
   },
   {
-    "key": "omdb.language[]",
+    "header": "omdb.language[]",
     "type": "string",
     "count": 1206,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 74,
     "dict": {
       "Afrikaans": 1,
@@ -7060,13 +7492,19 @@
     }
   },
   {
-    "key": "omdb.metascore",
+    "header": "omdb.metascore",
     "type": "number",
     "count": 717,
     "min": 16,
     "max": 100,
     "sum": 33773,
     "average": null,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 78,
     "weighted": null,
     "dict": {
@@ -7151,9 +7589,15 @@
     }
   },
   {
-    "key": "omdb.poster",
+    "header": "omdb.poster",
     "type": "string",
     "count": 717,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 709,
     "dict": {
       "N/A": 5,
@@ -7868,9 +8312,15 @@
     }
   },
   {
-    "key": "omdb.rated",
+    "header": "omdb.rated",
     "type": "string",
     "count": 717,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 11,
     "dict": {
       "APPROVED": 3,
@@ -7887,13 +8337,19 @@
     }
   },
   {
-    "key": "omdb.runtime",
+    "header": "omdb.runtime",
     "type": "number",
     "count": 717,
     "min": 4,
     "max": 202,
     "sum": 79339,
     "average": null,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 104,
     "weighted": null,
     "dict": {
@@ -8004,13 +8460,19 @@
     }
   },
   {
-    "key": "omdb.year",
+    "header": "omdb.year",
     "type": "number",
     "count": 717,
     "min": 1936,
     "max": 2017,
     "sum": 1436304,
     "average": 1989,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 54,
     "weighted": 2003,
     "dict": {
@@ -8071,9 +8533,15 @@
     }
   },
   {
-    "key": "subs.created",
+    "header": "subs.created",
     "type": "string",
     "count": 474,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 472,
     "dict": {
       "2011-01-23T04:31:38.000Z": 1,
@@ -8551,27 +9019,45 @@
     }
   },
   {
-    "key": "subs.error",
+    "header": "subs.error",
     "type": "string",
     "count": 264,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "No subtitles": 264
     }
   },
   {
-    "key": "subs.ext",
+    "header": "subs.ext",
     "type": "string",
     "count": 474,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 1,
     "dict": {
       "srt": 474
     }
   },
   {
-    "key": "subs.generated",
+    "header": "subs.generated",
     "type": "string",
     "count": 474,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 75,
     "dict": {
       "2017-02-20T20:56:15.351Z": 1,
@@ -8652,13 +9138,19 @@
     }
   },
   {
-    "key": "year",
+    "header": "year",
     "type": "number",
     "count": 738,
     "min": 1936,
     "max": 2017,
     "sum": 1478255,
     "average": 1989,
+    "summary": [
+      {
+        "label": "test",
+        "value": 3
+      }
+    ],
     "variety": 55,
     "weighted": 2003,
     "dict": {
